@@ -1,16 +1,16 @@
-*This package is looking for maintainer! If you are interested, please open an issue and leave your comment.*
+*Based on vue-localforage renovation*
 
-# vue-localforage
-A simple Vue plugin wrapped from localForage.
+# vue3-localforage
+A simple Vue3 plugin wrapped from localForage.
 
 ### Install
 
 ```bash
-npm install vue-localforage
+npm install vue3-localforage
 ```
 
 ```js
-import VueLocalForage from 'vue-localforage'
+import VueLocalForage from 'vue3-localforage'
 Vue.use(VueLocalForage)
 ```
 
