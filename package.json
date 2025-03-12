@@ -1,0 +1,27 @@
+{
+  "name": "vue3-localforage",
+  "version": "0.1.0",
+  "description": "A simple Vue3 plugin wrapped from localForage.",
+  "main": "vue-localforage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengzhoujiao/vue3-localforage.git"
+  },
+  "keywords": [
+    "Vue",
+    "Vue3",
+    "localForage"
+  ],
+  "author": "zhengzhoujiao",
+  "dependencies": {
+    "localforage": "^1.10.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhengzhoujiao/vue3-localforage/issues"
+  },
+  "homepage": "https://github.com/zhengzhoujiao/vue3-localforage#readme"
+}
