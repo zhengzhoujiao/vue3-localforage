@@ -17,96 +17,96 @@ Vue.use(VueLocalForage)
 ### Get item in localStorage
 
 ```js
-in setup:
-**proxy.$getItem(key, callback)**
+setup:
+proxy.$getItem(key, callback)
 normal:
-**this.$getItem(key, callback)**
+this.$getItem(key, callback)
 ```
 
 ### Set item in localStorage
 
 ```js
-in setup:
-**proxy.$setItem(key, value, callback)**
+setup:
+proxy.$setItem(key, value, callback)
 normal:
-**this.$setItem(key, value, callback)**
+this.$setItem(key, value, callback)
 ```
 
 ### Remove item in localStorage
 
 ```js
-in setup:
-**proxy.$removeItem(key, callback)**
+setup:
+proxy.$removeItem(key, callback)
 normal:
-**this.$removeItem(key, callback)**
+this.$removeItem(key, callback)
 ```
 
 ### Clean all the object in localStorage
 
 ```js
-in setup:
-**proxy.$clearStorage**
+setup:
+proxy.$clearStorage
 normal:
-**this.$clearStorage**
+this.$clearStorage
 ```
 
 ### Gets the number of keys in localStorage
 
 ```js
-in setup:
-**proxy.$lengthOfStorage**
+setup:
+proxy.$lengthOfStorage
 normal:
-**this.$lengthOfStorage**
+this.$lengthOfStorage
 ```
 
 ### Get the name of a key based on its ID
 
 ```js
-in setup:
-**proxy.$keyInStorage(keyIndex, callback)**
+setup:
+proxy.$keyInStorage(keyIndex, callback)
 normal:
-**this.$keyInStorage(keyIndex, callback)**
+this.$keyInStorage(keyIndex, callback)
 ```
 
 ### Get the list of all keys in localStorage
 
 ```js
-in setup:
-**proxy.$keysInStorage(callback)**
+setup:
+proxy.$keysInStorage(callback)
 normal:
-**this.$keysInStorage(callback)**
+this.$keysInStorage(callback)
 ```
 
 ### Iterate over all value/key pairs
 
 ```js
-in setup:
-**proxy.$iterateStorage(function (value, key, iterationNumber) {
+setup:
+proxy.$iterateStorage(function (value, key, iterationNumber) {
     //console.log all the kay/value pairs
     console.log([key, value]);
 }, function (err) {
     if (!err) {
         console.log('Iteration has completed');
     }
-})**
+})
 normal:
-**this.$iterateStorage(function (value, key, iterationNumber) {
+this.$iterateStorage(function (value, key, iterationNumber) {
     //console.log all the kay/value pairs
     console.log([key, value]);
 }, function (err) {
     if (!err) {
         console.log('Iteration has completed');
     }
-})**
+})
 ```
 
 ### Force usage of a particular driver or drivers, if available.
 
 ```js
-in setup:
-**proxy.$setStorageDriver(localforage.LOCALSTORAGE)**
+setup:
+proxy.$setStorageDriver(localforage.LOCALSTORAGE)
 normal:
-**this.$setStorageDriver(localforage.LOCALSTORAGE)**
+this.$setStorageDriver(localforage.LOCALSTORAGE)
 ```
 
 By default, localForage selects backend drivers for the datastore in this order:
@@ -127,16 +127,16 @@ localforage.LOCALSTORAGE
 ### Set and persist localForage options.
 
 ```js
-in setup:
-**proxy.$storageConfig({
+setup:
+proxy.$storageConfig({
     driver: localforage.LOCALSTORAGE,
     name: 'Name-of-localStorage'
-});**
+});
 normal:
-**this.$storageConfig({
+this.$storageConfig({
     driver: localforage.LOCALSTORAGE,
     name: 'Name-of-localStorage'
-});**
+});
 ```
 
 This must be called before any other calls to localForage are made, but can be called after localForage is loaded.
